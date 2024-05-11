@@ -1,38 +1,69 @@
 .App {
-  text-align: center;
+    height: 100vh;
+    width: 100vw;
+    background: #dadada;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #fff;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+
+    padding: 16px;
+    border-radius: 8px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.content {
+    width: 600px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.interval {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.interval__input_range {
+    width: 200px;
+    margin-right: 16px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.interval__input_number {
+    width: 40px;
+    padding: 4px;
+    margin-right: 4px;
+    border: 1px solid #d1d1d1;
+    border-radius: 4px;
+}
+
+.canvas {
+    height: 400px;
+    padding: 10px;
+    border: 1px solid #d1d1d1;
+    border-radius: 4px;
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.canvas_item {
+    border: 1px solid #d1d1d1;
+    border-radius: 4px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.canvas_item_hidden {
+    visibility: hidden;
 }
