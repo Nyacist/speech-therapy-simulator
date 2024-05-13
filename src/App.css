@@ -43,6 +43,24 @@
     border-radius: 4px;
 }
 
+.button {
+    margin-left: 40px;
+    padding: 8px 16px;
+    height: 40px;
+    width: 100px;
+    border: none;
+    border-radius: 20px;
+    background: #abdfff;
+}
+
+.button_blue {
+    background: #abdfff;
+}
+
+.button_red {
+    background: #e52b50;
+}
+
 .canvas {
     height: 400px;
     padding: 10px;
@@ -59,11 +77,34 @@
     border: 1px solid #d1d1d1;
     border-radius: 4px;
 
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+
+    visibility: hidden;
+}
+
+.canvas_item_show {
+    visibility: visible;
+}
+
+.wrapper_letter {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+
+}
+
+.letter {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 2rem;
 }
 
-.canvas_item_hidden {
-    visibility: hidden;
+.hand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #d3d3d3;
 }
